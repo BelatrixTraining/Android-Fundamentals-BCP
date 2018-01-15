@@ -13,7 +13,7 @@ github: https://github.com/emedinaa
 
 Entorno de desarrollo , componentes de una aplicación android y gradle.
 
-## 1 - Descarga el entorno de desarrollo
+## 1. Descarga el entorno de desarrollo
 
 El IDE oficial para el desarrollo de apps en Android es Android Studio y la versión con la cual trabajaremos será 3.0. Pueden descargar este software para los diferentes sistemas operativos en este [link](https://developer.android.com/studio/index.html) , es importante verificar los requerimientos mínimos de sistema ya que AS tiene un alto consumo de recursos.
 Adicional , para trabajar en Android es requerido tener instalado el JDK de Java , JDK 8 que puedes descargar en el siguiente [link](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
