@@ -15,7 +15,7 @@ github: https://github.com/emedinaa
 
 2. Entorno de desarrollo , componentes de una aplicación android y gradle.
 
-3. Interfaz de Usuario, layouts , widgets y componentes material.
+3. Interfaz de Usuario, layouts , widgets y componentes de material design.
 
 4. Eventos de usuario.
 
