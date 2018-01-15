@@ -9,26 +9,150 @@ e-mail: emedinaa@gmail.com
 
 github: https://github.com/emedinaa
 
-# Temario 
+# Lesson2 
 
-1. Java para Android Developers.
+Entorno de desarrollo , componentes de una aplicación android y gradle.
 
-2. Entorno de desarrollo , componentes de una aplicación android y gradle.
+## 1 - Descarga el entorno de desarrollo
 
-3. Interfaz de Usuario, layouts , widgets y componentes de material design.
+El IDE oficial para el desarrollo de apps en Android es Android Studio y la versión con la cual trabajaremos será 3.0. Pueden descargar este software para los diferentes sistemas operativos en este [link](https://developer.android.com/studio/index.html) , es importante verificar los requerimientos mínimos de sistema ya que AS tiene un alto consumo de recursos.
+Adicional , para trabajar en Android es requerido tener instalado el JDK de Java , JDK 8 que puedes descargar en el siguiente [link](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 
-4. Eventos de usuario.
+## 2. Crea tu primer proyecto Android
 
-5. Listas, Grillas y adapters ( Recycler View)
+Desde android studio tenemos la opción :
 
-6. Comunicación entre pantallas, intents, dialogs y notificaciones.
+File -> New -> New Project
 
-7. Fragments, conceptos y comunicación.
+Revisar los screenshots o en el [link](https://developer.android.com/training/basics/firstapp/creating-project.html?hl=es-419) (paso a paso) 
 
-8. Componentes de navegación, tabs , navigation drawer, Viewpager.
+## 3. Trabaja sobre un proyecto base (template)
 
-9. Servicios, Procesos en segundo plano.
+Todo el curso se va realizar con un proyecto template, con esto garantizamos que trabajemos sobre la misma configuración.
+Abrir desde Android Studio el proyecto "BxTemplate"
 
+File -> Open -> template/BxTemplate
+
+## 5. Explora el entorno de desarrollo y revisa la estructura del proyecto
+
+Al abrir un proyecto en Android Studio por primera vez debes explorar en entorno de desarrollo y el proyecto.
+
+Explorar el entorno , guía de usuario [link](https://developer.android.com/studio/intro/index.html)
+
+Explorar el proyecto ,
+
+build.gradle del proyecto
+```
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.1'
+        
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    // Sdk and tools
+    minSdkVersion = 15
+    targetSdkVersion = 26
+    compileSdkVersion = 26
+    buildToolsVersion = '26.1.0'
+    constraintLayoutVersion='1.0.2'
+
+    // App dependencies
+    supportLibraryVersion = '26.1.0'
+    junitVersion = '4.12'
+}
+
+```
+
+build.gradle de la app
+```
+apply plugin: 'com.android.application'
+
+android {
+    //compileSdkVersion 26
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        applicationId "com.belatrix.bxtemplate"
+
+        //minSdkVersion 15
+        minSdkVersion rootProject.ext.minSdkVersion
+
+        //targetSdkVersion 26
+        targetSdkVersion rootProject.ext.targetSdkVersion
+
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    //implementation 'com.android.support:appcompat-v7:26.1.0'
+    //implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    implementation "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
+    implementation "com.android.support:support-v4:$rootProject.supportLibraryVersion"
+
+    implementation "com.android.support:cardview-v7:$rootProject.supportLibraryVersion"
+    implementation "com.android.support:design:$rootProject.supportLibraryVersion"
+    implementation "com.android.support:recyclerview-v7:$rootProject.supportLibraryVersion"
+    implementation "com.android.support.constraint:constraint-layout:$constraintLayoutVersion"
+
+    //testImplementation 'junit:junit:4.12'
+    testImplementation "junit:junit:$rootProject.ext.junitVersion"
+
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+}
+
+```
+
+## 4. Configura un emulador
+
+Contamos con 3 opciones para poder probar nuestras aplicaciones 
+
+- Crear un virtual device desde Android Studio , revisar el siguiente [link](https://developer.android.com/studio/run/emulator.html) 
+
+- Usar Genymotion , [link](https://www.genymotion.com/desktop/)
+
+- Trabajar directamente sobre un dispositivo físico
+
+## 5. Ejecuta tu primer proyecto Android
+
+Desde Android Studio tenemos las opción
+
+Run -> run
 
 # Referencias 
 
@@ -36,17 +160,15 @@ Entorno de desarrollo https://developer.android.com/studio/index.html?hl=es-419
 
 Android Developers - Desarrollo https://developer.android.com/develop/index.html
 
-Android Developers - Diseño https://developer.android.com/design/index.html
+Primer proyecto Android https://developer.android.com/training/basics/firstapp/creating-project.html?hl=es-419
 
-Android Developers - Distribución https://developer.android.com/distribute/index.html
+Codelab - primera android app en Java https://codelabs.developers.google.com/codelabs/build-your-first-android-app/index.html?index=..%2F..%2Findex
 
-Android Samples - https://developer.android.com/samples/index.html
+Codelab - primera android app en Kotlin https://codelabs.developers.google.com/codelabs/build-your-first-android-app-kotlin/index.html?index=..%2F..%2Findex
 
-Google Samples - https://github.com/googlesamples?utf8=%E2%9C%93&q=&type=&language=java https://github.com/googlesamples?utf8=%E2%9C%93&q=&type=&language=kotlin
+Android Tool Time https://www.youtube.com/watch?v=0n9sBgds-Hs&list=PLWz5rJ2EKKc_w6fodMGrA1_tsI3pqPbqa
 
-Google Java Styles - https://google.github.io/styleguide/javaguide.html
+Canal oficial en Youtube para Android Developers https://www.youtube.com/user/androiddevelopers
 
-Android Inspired UI - http://android.inspired-ui.com/
 
-Google Codelabs - https://codelabs.developers.google.com/
 
