@@ -33,7 +33,7 @@ Abrir desde Android Studio el proyecto "BxTemplate"
 
 File -> Open -> template/BxTemplate
 
-## 5. Explora el entorno de desarrollo y revisa la estructura del proyecto
+## 4. Explora el entorno de desarrollo y revisa la estructura del proyecto
 
 Al abrir un proyecto en Android Studio por primera vez debes explorar en entorno de desarrollo y el proyecto.
 
@@ -138,7 +138,7 @@ dependencies {
 
 ```
 
-## 4. Configura un emulador
+## 5. Configura un emulador
 
 Contamos con 3 opciones para poder probar nuestras aplicaciones 
 
@@ -148,7 +148,7 @@ Contamos con 3 opciones para poder probar nuestras aplicaciones
 
 - Trabajar directamente sobre un dispositivo físico
 
-## 5. Ejecuta tu primer proyecto Android
+## 6. Ejecuta tu primer proyecto Android
 
 Desde Android Studio tenemos las opción
 
