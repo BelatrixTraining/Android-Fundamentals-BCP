@@ -11,7 +11,7 @@ github: https://github.com/emedinaa
 
 # Lesson3 
 
-Entorno de desarrollo , componentes de una aplicación android y gradle.
+Interfaz de Usuario, layouts , widgets y componentes de material design.
 
 ## 1. Revisión general de los Recursos (R)
 
@@ -76,20 +76,24 @@ Entorno de desarrollo , componentes de una aplicación android y gradle.
 
   * Layouts
   
-    - LinearLayout
+  - LinearLayout
     
     <img src="https://github.com/ISILAndroid/am1_group2016_2/blob/Lesson4/images/linearlayout.png" height="480">
 
-    - RelativeLayout
+- RelativeLayout
     
     <img src="https://github.com/ISILAndroid/am1_group2016_2/blob/Lesson4/images/relativelayout.png" height="480">
          
-    - Listview, GridView , RecyclerView
+- Listview, GridView , RecyclerView
     
     <img src="https://github.com/ISILAndroid/am1_group2016_2/blob/Lesson4/images/listview.png" height="480">
     
     <img src="https://github.com/ISILAndroid/am1_group2016_2/blob/Lesson4/images/gridview.png" height="480">
-  
+    
+ - ConstraintLayout
+ 
+   <img src="https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiMr7i5pt_YAhVFjlQKHf1NDtcQjRx6BAgAEAY&url=https%3A%2F%2Fdeveloper.android.com%2Ftraining%2Fconstraint-layout%2Findex.html&psig=AOvVaw0YV60wbgBZluCO3ELYWouF&ust=1516288576544376" height="480"/>
+ 
 ## 3. Ejercicios
 
 - LinearLayout
@@ -113,8 +117,6 @@ Entorno de desarrollo , componentes de una aplicación android y gradle.
 
 # Referencias 
 
-ConstraintLayout https://developer.android.com/training/constraint-layout/index.html
-
 User Interface https://developer.android.com/guide/topics/ui/index.html
 
 Build a simple User Interface https://developer.android.com/training/basics/firstapp/building-ui.html
@@ -122,6 +124,12 @@ Build a simple User Interface https://developer.android.com/training/basics/firs
 Android Design https://developer.android.com/design/index.html
 
 Layouts https://developer.android.com/guide/topics/ui/declaring-layout.html
+
+ConstraintLayout https://developer.android.com/training/constraint-layout/index.html
+
+ConstraintLayout examples https://github.com/googlesamples/android-ConstraintLayoutExamples
+
+Layout Editor https://developer.android.com/studio/write/layout-editor.html
 
 Android Inspired UI http://android.inspired-ui.com/
 
