@@ -92,9 +92,9 @@ Interfaz de Usuario, layouts , widgets y componentes de material design.
     
  - ConstraintLayout
  
-   <img src="https://developer.android.com/training/constraint-layout/images/constraint-fail_2x.png" height="480"/>
+   <img src="https://developer.android.com/training/constraint-layout/images/constraint-fail_2x.png" height="360"/>
    
-   <img src="https://developer.android.com/training/constraint-layout/images/constraint-fail-fixed_2x.png" height="480"/>
+   <img src="https://developer.android.com/training/constraint-layout/images/constraint-fail-fixed_2x.png" height="360"/>
  
 ## 3. Ejercicios
 
