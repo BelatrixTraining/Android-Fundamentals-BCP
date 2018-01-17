@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class GalleryActivity extends AppCompatActivity {
+public class GalleryActivity extends AppCompatActivity  {
 
     private ImageView img;
     private Button btnImg;
@@ -39,7 +39,7 @@ public class GalleryActivity extends AppCompatActivity {
 
         img.setImageResource(images[0]);
         count=0;
-        txtImg.setText("Imagen " + count);
+        txtImg.setText("Imagen " + count);//set get
 
         //Events
         img.setOnClickListener(new View.OnClickListener() {
@@ -48,6 +48,7 @@ public class GalleryActivity extends AppCompatActivity {
 
             }
         });
+
 
         img.setOnClickListener(new View.OnClickListener() {
 

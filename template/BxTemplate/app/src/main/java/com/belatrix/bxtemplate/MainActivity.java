@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     private View constraintLayoutContainer;
     private Snackbar snackbar;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,9 +30,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //bla bla bla bla
-                updateText();
+                //updateText();
                 //showMessage();
-                //rippleEffect();
+                rippleEffect();
             }
         });
     }
@@ -43,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void updateText() {
-        textViewHello.setText("Hello Android");
+        textViewHello.setText("Hello IOS");
     }
 
     private void rippleEffect() {
@@ -63,9 +64,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void ui() {
-        constraintLayoutContainer= findViewById(R.id.constraintLayoutContainer);
-        imageViewBx= (ImageView) findViewById(R.id.imageViewBx);
-        textViewHello= (TextView) findViewById(R.id.textViewHello);
+        constraintLayoutContainer=
+                findViewById(R.id.constraintLayoutContainer);
+        imageViewBx=
+                (ImageView) findViewById(R.id.imageViewBx);
+        textViewHello=
+                (TextView) findViewById(R.id.textViewHello);
 
         snackbar= Snackbar.make(constraintLayoutContainer,"Message",Snackbar.LENGTH_LONG);
     }
