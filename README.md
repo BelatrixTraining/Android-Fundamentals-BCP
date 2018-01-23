@@ -13,90 +13,64 @@ github: https://github.com/emedinaa
 
 Eventos de usuario.
 
-## 1. Revisión general de los Recursos (R)
+## 1. UI components
 
-  - Estructura de un elemento XML :
-  
-```
-    <?xml version="1.0" encoding="utf-8"?>
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-        android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:paddingRight="@dimen/activity_horizontal_margin"
-        android:paddingTop="@dimen/activity_vertical_margin"
-        android:paddingBottom="@dimen/activity_vertical_margin">
-    
-        <TextView android:text="Hello World!" android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-    </RelativeLayout>
-```
+- Buttons
+- Checkboxes
+- Radio buttons
+- Campos de textos y labels
+- Spinners
+- Pickers
 
-  - ID :
-  
-```
-      android:id="@+id/img"
-```
+## 1. Conocer los eventos de usuario
 
-```
-      <TextView
-            android:id="@+id/txtImg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Medium Text"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
-```
-    
-  - Atributos :
-    
-```
-        android:layout_width="300dp"
-```
-    
-  - En el código podemos invocar a los elementos XML de la siguiente manera :
-  
-```
-      @Override
-      protected void onCreate(Bundle savedInstanceState) {
-          super.onCreate(savedInstanceState);
-          setContentView(R.layout.activity_main);
-      }
-```
-    
-```
-     private ImageView img;
-     private Button btnImg;
-     private TextView txtImg;
+### Eventos
 
-     img= (ImageView)findViewById(R.id.img);
-     btnImg= (Button)findViewById(R.id.butImg);
-     txtImg = (TextView)findViewById(R.id.txtImg);
-```
-
-## 2. Conocer los Layouts
-
-  * Layouts
-  
-  - LinearLayout
-    
-    <img src="https://github.com/ISILAndroid/am1_group2016_2/blob/Lesson4/images/linearlayout.png" height="480">
-
-- RelativeLayout
-    
-    <img src="https://github.com/ISILAndroid/am1_group2016_2/blob/Lesson4/images/relativelayout.png" height="480">
-         
-- Listview, GridView , RecyclerView
-    
-    <img src="https://github.com/ISILAndroid/am1_group2016_2/blob/Lesson4/images/listview.png" height="480">
-    
-    <img src="https://github.com/ISILAndroid/am1_group2016_2/blob/Lesson4/images/gridview.png" height="480">
-    
- - ConstraintLayout
+```java
+ btnSignUp =(Button)findViewById(R.id.btnSignUp);
  
-   <img src="https://developer.android.com/training/constraint-layout/images/constraint-fail_2x.png" height="360"/>
-   
-   <img src="https://developer.android.com/training/constraint-layout/images/constraint-fail-fixed_2x.png" height="360"/>
+ ...
  
+   btnSignUp.setOnClickListener(new OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            //action
+        }
+  });
+```
 
+```java
+  rbGenero.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+              @Override
+              public void onCheckedChanged(RadioGroup radioGroup, int checkedId) {
+                  switch (checkedId) {
+                      case R.id.rbM:
+                          genero = 1;
+                          break;
+                      case R.id.rbF:
+                          genero = 2;
+                          break;
+                  }
+              }
+  });
+```
+
+```java
+
+  spLocation.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+              @Override
+              public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                  Log.v("CONSOLE", "spLocation" + adapterView.getAdapter().getItem(i));
+                  localidad = adapterView.getAdapter().getItem(i).toString();
+              }
+
+              @Override
+              public void onNothingSelected(AdapterView<?> adapterView) {
+
+              }
+          });
+  }
+```
 
 # Referencias 
 
