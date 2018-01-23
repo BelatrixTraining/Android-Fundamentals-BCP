@@ -135,5 +135,7 @@ Layout Editor https://developer.android.com/studio/write/layout-editor.html
 
 Android Inspired UI http://android.inspired-ui.com/
 
+Circular Launcher http://developer.samsung.com/sample-app/view.do?v=S000000004D
+
 
 
