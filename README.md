@@ -76,5 +76,7 @@ Eventos de usuario.
 
 User Events https://developer.android.com/guide/topics/ui/ui-events.html
 
+Controles de entradan https://developer.android.com/guide/topics/ui/controls.html
+
 
 
