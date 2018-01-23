@@ -9,9 +9,9 @@ e-mail: emedinaa@gmail.com
 
 github: https://github.com/emedinaa
 
-# Lesson3 
+# Lesson4 
 
-Interfaz de Usuario, layouts , widgets y componentes de material design.
+Eventos de usuario.
 
 ## 1. Revisión general de los Recursos (R)
 
@@ -96,44 +96,11 @@ Interfaz de Usuario, layouts , widgets y componentes de material design.
    
    <img src="https://developer.android.com/training/constraint-layout/images/constraint-fail-fixed_2x.png" height="360"/>
  
-## 3. Ejercicios
 
-- LinearLayout
-    
-    <img src="https://github.com/ISILAndroid/am1_group2016_2/blob/Lesson4/images/linearlayout_sample.png" height="480">
-    
-
-    <img src="https://github.com/ISILAndroid/am1_group2016_2/blob/Lesson4/images/linearlayout_horz_sample.png" height="480">
-    
-    
-    <img src="https://github.com/ISILAndroid/am1_group2016_2/blob/Lesson4/images/linearlayout_weight_ver_sample.png" height="480">
-    
-    
-    <img src="https://github.com/ISILAndroid/am1_group2016_2/blob/Lesson4/images/linearlayout_weight_hor_sample.png" height="480">
-    
-- Login Sample
-    
-    <img src="https://github.com/ISILAndroid/am1_group2016_2/blob/Lesson4/images/login_sample.png" height="480">
-    
-    <img src="https://github.com/ISILAndroid/am1_group2016_2/blob/Lesson4/images/login_sample_xml.png" height="480">
 
 # Referencias 
 
-User Interface https://developer.android.com/guide/topics/ui/index.html
-
-Build a simple User Interface https://developer.android.com/training/basics/firstapp/building-ui.html
-
-Android Design https://developer.android.com/design/index.html
-
-Layouts https://developer.android.com/guide/topics/ui/declaring-layout.html
-
-ConstraintLayout https://developer.android.com/training/constraint-layout/index.html
-
-ConstraintLayout examples https://github.com/googlesamples/android-ConstraintLayoutExamples
-
-Layout Editor https://developer.android.com/studio/write/layout-editor.html
-
-Android Inspired UI http://android.inspired-ui.com/
+User Events https://developer.android.com/guide/topics/ui/ui-events.html
 
 
 
