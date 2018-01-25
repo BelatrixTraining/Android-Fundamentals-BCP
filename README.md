@@ -9,74 +9,26 @@ e-mail: emedinaa@gmail.com
 
 github: https://github.com/emedinaa
 
-# Lesson4 
+# Lesson5 
 
-Eventos de usuario.
+Listas, Grillas y adapters (RecyclerView)
 
-## 1. UI components
-
-- Buttons
-- Checkboxes
-- Radio buttons
-- Campos de textos y labels
-- Spinners
-- Pickers
-
-## 1. Conocer los eventos de usuario
+## 1. xxxx
 
 ### Eventos
 
-```java
- btnSignUp =(Button)findViewById(R.id.btnSignUp);
- 
- ...
- 
-   btnSignUp.setOnClickListener(new OnClickListener() {
-        @Override
-        public void onClick(View view) {
-            //action
-        }
-  });
-```
-
-```java
-  rbGenero.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-              @Override
-              public void onCheckedChanged(RadioGroup radioGroup, int checkedId) {
-                  switch (checkedId) {
-                      case R.id.rbM:
-                          genero = 1;
-                          break;
-                      case R.id.rbF:
-                          genero = 2;
-                          break;
-                  }
-              }
-  });
-```
-
-```java
-
-  spLocation.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-              @Override
-              public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                  Log.v("CONSOLE", "spLocation" + adapterView.getAdapter().getItem(i));
-                  localidad = adapterView.getAdapter().getItem(i).toString();
-              }
-
-              @Override
-              public void onNothingSelected(AdapterView<?> adapterView) {
-
-              }
-          });
-  }
-```
-
 # Referencias 
 
-User Events https://developer.android.com/guide/topics/ui/ui-events.html
+ListView https://developer.android.com/guide/topics/ui/layout/listview.html
 
-Controles de entradan https://developer.android.com/guide/topics/ui/controls.html
+GridView https://developer.android.com/guide/topics/ui/layout/gridview.html
+    
+Spinner https://developer.android.com/guide/topics/ui/controls/spinner.html
 
+Making ListView Scrolling Smooth https://developer.android.com/training/improving-layouts/smooth-scrolling.html
+    
+ViewHolder Pattern https://sriramramani.wordpress.com/2012/07/25/infamous-viewholder-pattern/
+
+RecyclerView https://developer.android.com/training/material/lists-cards.html?hl=es-419
 
 
