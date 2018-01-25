@@ -31,4 +31,8 @@ ViewHolder Pattern https://sriramramani.wordpress.com/2012/07/25/infamous-viewho
 
 RecyclerView https://developer.android.com/training/material/lists-cards.html?hl=es-419
 
+Material Design - Cards https://material.io/guidelines/components/cards.html
 
+Material Design - Lists https://material.io/guidelines/components/lists.html#lists-specs
+
+Material Design - DataTables https://material.io/guidelines/components/data-tables.html#
