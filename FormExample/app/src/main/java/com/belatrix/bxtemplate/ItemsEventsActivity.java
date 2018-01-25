@@ -19,13 +19,12 @@ public class ItemsEventsActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_items_events);
-        //ui();
-        uiFlag();
+        ui();
+        //uiFlag();
     }
 
     private void ui() {
         spLocation =(Spinner)findViewById(R.id.spLocation);
-
 
         spLocation.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override

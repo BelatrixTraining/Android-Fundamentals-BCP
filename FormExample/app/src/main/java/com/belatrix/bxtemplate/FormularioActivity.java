@@ -1,14 +1,10 @@
 package com.belatrix.bxtemplate;
 
-import java.util.Calendar;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
-import android.os.Bundle;
 import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.app.DatePickerDialog.OnDateSetListener;
 import android.app.Dialog;
+import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -21,6 +17,10 @@ import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.Calendar;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class FormularioActivity extends Activity {
 
@@ -224,6 +224,7 @@ public class FormularioActivity extends Activity {
 		// TODO Auto-generated method stub
 		switch (id) {
 		case 100:
+                //Guava
 				final Calendar c=Calendar.getInstance();
                 c.add(Calendar.YEAR,1);
 				int year=c.get(Calendar.YEAR);

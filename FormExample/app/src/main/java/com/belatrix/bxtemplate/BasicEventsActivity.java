@@ -25,11 +25,18 @@ public class BasicEventsActivity extends Activity implements View.OnClickListene
     }
 
     private void ui() {
+
         btn= (Button)findViewById(R.id.btn);
         ivi= (ImageView) findViewById(R.id.ivi);
         flay= (FrameLayout) findViewById(R.id.flay);
         tvi= (TextView) findViewById(R.id.tvi);
 
+        /*btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });*/
         btn.setOnClickListener(this);
         ivi.setOnClickListener(this);
         flay.setOnClickListener(this);
