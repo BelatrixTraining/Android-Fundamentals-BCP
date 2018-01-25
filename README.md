@@ -13,9 +13,6 @@ github: https://github.com/emedinaa
 
 Listas, Grillas y adapters (RecyclerView)
 
-## 1. xxxx
-
-### Eventos
 
 # Referencias 
 
