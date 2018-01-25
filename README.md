@@ -19,7 +19,7 @@ github: https://github.com/emedinaa
 
 4. Eventos de usuario.
 
-5. Listas, Grillas y adapters ( Recycler View)
+5. Listas, Grillas y adapters ( RecyclerView)
 
 6. Comunicación entre pantallas, intents, dialogs y notificaciones.
 
