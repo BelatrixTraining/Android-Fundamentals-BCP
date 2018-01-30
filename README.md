@@ -17,6 +17,11 @@ github: https://github.com/emedinaa
  
  ![img](https://developer.android.com/guide/components/images/activity_lifecycle.png)
  
+ 
+ Flujo de una Aplicación
+ 
+ ![img](https://developer.android.com/images/training/app-navigation-wireframing-wires-phone.png)
+ 
  Comunicación entre Actividades :
  
  Tenemos 2 pantallas: SplashActivity y LogInActivity , y requerimos ir de la primera pantalla y la segunda pantalla.
