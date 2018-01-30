@@ -52,3 +52,5 @@ Android Dev Intents https://developer.android.com/reference/android/content/Inte
 Common Intents https://developer.android.com/guide/components/intents-common.html?hl=en-419
 
 Intents and Intent Filters https://developer.android.com/guide/components/intents-filters.html?hl=en-419
+
+Designing effective navigation https://developer.android.com/training/design-navigation/index.html
