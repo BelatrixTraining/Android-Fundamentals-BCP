@@ -13,6 +13,12 @@ github: https://github.com/emedinaa
 
  Comunicación entre pantallas, intents, dialogs y notificaciones.
  
+ Ciclo de Vida de un Actividad
+ 
+ ![img](https://developer.android.com/guide/components/images/activity_lifecycle.png)
+ 
+ Comunicación entre Actividades :
+ 
  Tenemos 2 pantallas: SplashActivity y LogInActivity , y requerimos ir de la primera pantalla y la segunda pantalla.
  Lo primero es crear un intent, donde indicamos en que vista estamos (this) y a que pantalla queremos ir (LogInActivity.class)
  
