@@ -1,13 +1,13 @@
 package com.belatrix.kotlintemplate;
 
-import android.os.Bundle;
 import android.app.Activity;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.belatrix.kotlintemplate.adapter.MySimpleListAdapter;
 import com.belatrix.kotlintemplate.storage.Cheeses;
 import com.belatrix.kotlintemplate.storage.Shakespeare;
 
@@ -15,6 +15,15 @@ import com.belatrix.kotlintemplate.storage.Shakespeare;
 public class SimpleListActivity extends Activity {
 
 
+    /*
+        1. Proveedor de datos List, ArrayList
+        2. Contenedor , ListView, GridView, RecyclerView
+        3. Entidad, modelo
+        4. Celda , xml
+        5. Adapter
+        6. Setear adapter al View
+
+     */
     private String[] mStrings = Cheeses.sCheeseStrings;
     private String[] mTitles= Shakespeare.TITLES;
     private String[] mDialogs= Shakespeare.DIALOGUE;
@@ -30,8 +39,13 @@ public class SimpleListActivity extends Activity {
 
         lviCheeses=(ListView)findViewById(R.id.lviCheeses);
 
-        lviCheeses.setAdapter(new ArrayAdapter<String>(this,
-                R.layout.my_row, mStrings));
+        /*lviCheeses.setAdapter(new ArrayAdapter<String>(this,
+                R.layout.my_row, mStrings));*/
+
+        MySimpleListAdapter mySimpleListAdapter= new MySimpleListAdapter(this,
+                mStrings);
+
+        lviCheeses.setAdapter(mySimpleListAdapter);
         lviCheeses.setTextFilterEnabled(true);
 
         //events

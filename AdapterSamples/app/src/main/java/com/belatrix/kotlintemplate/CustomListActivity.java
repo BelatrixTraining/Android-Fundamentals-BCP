@@ -19,6 +19,15 @@ import java.util.List;
 
 public class CustomListActivity extends Activity {
 
+    /*
+        1. Proveedor de datos List, ArrayList
+        2. Contenedor , ListView, GridView, RecyclerView
+        3. Entidad, modelo
+        4. Celda , xml
+        5. Adapter
+        6. Setear adapter al View
+
+     */
     //private String[] mStrings = Cheeses.sCheeseStrings;
     private String[] mStrings = Movies.DATA;
     private ListView lviCheeses;

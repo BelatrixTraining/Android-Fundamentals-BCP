@@ -18,7 +18,7 @@ import java.util.List;
  */
 public class MovieObjAdapter extends BaseAdapter {
 
-    private Context context;
+    private final Context context;
     private List<MovieEntity> data;
 
     public MovieObjAdapter(Context context, List<MovieEntity> data) {
@@ -50,18 +50,24 @@ public class MovieObjAdapter extends BaseAdapter {
         } else {
             view = convertView;
         }
+
+        //elementos de la ui
         TextView tviTitle=(TextView)view.findViewById(R.id.tviName);
         ImageView iviCartelera= (ImageView)view.findViewById(R.id.iviCartelera);
 
+        //entidad
         final MovieEntity movieEntity= data.get(position);
 
+        //setear valores de la entidad en la celda
         tviTitle.setText(movieEntity.getTitle());
+
         boolean cartelera=movieEntity.isCartelera();
         if(cartelera){
             iviCartelera.setVisibility(View.VISIBLE);
         }else{
             iviCartelera.setVisibility(View.GONE);
         }
+
         return view;
     }
 }

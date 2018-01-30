@@ -10,6 +10,17 @@ import android.support.annotation.Nullable;
 
 public class CalculadoraActivity extends Activity {
 
+    /*
+        Pasos
+
+        1. Declarar variables con los elementos de la UI
+        2. Inicializar variables
+        3. Declarar eventos
+        4. Capturar los datos de entrada del usuario
+        5. Crear metodos con las operaciones
+        6. Mostrar resultados
+     */
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

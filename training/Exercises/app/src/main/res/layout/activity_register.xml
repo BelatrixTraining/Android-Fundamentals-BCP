@@ -9,13 +9,13 @@
 
     <FrameLayout
         android:id="@+id/header"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_alignParentTop="true"
         android:background="@color/header">
         <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
+            android:layout_height="match_parent"
             android:scaleType="fitCenter"
             android:src="@drawable/img_header"
             android:layout_gravity="center"/>
@@ -26,18 +26,18 @@
         android:layout_below="@+id/header"
         android:orientation="vertical"
         android:padding="10dp"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <EditText
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/name"
             android:textColorHint="@color/grey_hint"
             android:id="@+id/eteName" />
 
         <EditText
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/email"
             android:inputType="textEmailAddress"
@@ -46,7 +46,7 @@
             android:id="@+id/eteEmail" />
 
         <EditText
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/password"
             android:inputType="textPassword"
@@ -55,7 +55,7 @@
             android:id="@+id/etePassword1" />
 
         <EditText
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/password"
             android:inputType="textPassword"
@@ -63,9 +63,12 @@
             android:ems="10"
             android:id="@+id/etePassword2"
             android:layout_marginBottom="20dp"/>
+        <!--<android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />-->
 
         <Button
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
@@ -76,7 +79,7 @@
     </LinearLayout>
 
     <FrameLayout
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:background="@color/footer"
         android:layout_alignParentBottom="true"
         android:layout_height="45dp">

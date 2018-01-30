@@ -2,10 +2,7 @@ package com.belatrix.kotlintemplate;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.GridView;
-import android.widget.ListView;
 
 import com.belatrix.kotlintemplate.adapter.MovieGridAdapter;
 import com.belatrix.kotlintemplate.model.MovieEntity;
@@ -15,9 +12,18 @@ import java.util.List;
 
 public class MovieGridActivity extends Activity {
 
+    /*
+    1. Proveedor de datos List, ArrayList
+    2. Contenedor , ListView, GridView, RecyclerView
+    3. Entidad, modelo
+    4. Celda , xml
+    5. Adapter
+    6. Setear adapter al View
+
+ */
+
     private GridView myGrid;
     private MovieGridAdapter movieAdapter;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,4 +41,6 @@ public class MovieGridActivity extends Activity {
         myGrid.setAdapter(movieAdapter);
 
     }
+
+
 }

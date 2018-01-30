@@ -19,7 +19,7 @@ import java.util.List;
  */
 public class MovieGridAdapter extends BaseAdapter {
 
-    private Context context;
+    private final Context context;
     private List<MovieEntity> data;
 
     public MovieGridAdapter(Context context, List<MovieEntity> data) {

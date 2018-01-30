@@ -10,16 +10,36 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity android:name=".CalculadoraKotlinActivity" />
+        <activity android:name=".FormularioKotlinActivity"></activity>
+        <activity android:name=".CalculadoraActivity">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity android:name=".FormularioActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CalculadoraKotlinActivity" />
-        <activity android:name=".FormularioKotlinActivity"></activity>
-        <activity android:name=".CalculadoraActivity"></activity>
-        <activity android:name=".FormularioActivity"></activity>
+        <activity android:name=".MyActivity"></activity>
+        <activity android:name=".MySuperActivity"></activity>
     </application>
 
 </manifest>
