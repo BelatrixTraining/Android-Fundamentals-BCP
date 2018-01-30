@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SimpleList"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/btnSimpleList"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Simple Grid"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/btnSimpleGrid"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CustomList"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/btnCustomList"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Movie Grid"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/btnMoviegrid"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RecyclerView"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/btnRecycler"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Recycler Events "
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/btnRecyclerEvents"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Recycler Type "
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/btnRecyclerTypes"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dynamic Content"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/btnDynamicContent"/>
+
+            </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
