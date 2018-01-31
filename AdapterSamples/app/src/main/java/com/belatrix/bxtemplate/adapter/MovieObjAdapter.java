@@ -18,7 +18,7 @@ import java.util.List;
  */
 public class MovieObjAdapter extends BaseAdapter {
 
-    private Context context;
+    private final Context context;
     private List<MovieEntity> data;
 
     public MovieObjAdapter(Context context, List<MovieEntity> data) {

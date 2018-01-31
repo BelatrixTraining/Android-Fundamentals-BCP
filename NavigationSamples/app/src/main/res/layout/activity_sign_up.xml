@@ -12,6 +12,7 @@
         android:gravity="center_vertical"
         android:id="@+id/llayHeader">
         <ImageView
+            android:id="@+id/iviBack"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:padding="8dp"

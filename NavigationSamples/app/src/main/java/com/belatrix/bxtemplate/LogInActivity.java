@@ -9,13 +9,22 @@ public class LogInActivity extends AppCompatActivity {
 
     private View btnNext,llaySignUp;
 
+    private String userId;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log_in);
+        extras();
         ui();
     }
 
+    private void extras(){
+        if(getIntent()!=null && getIntent().getExtras()!=null){
+            Bundle bundle= getIntent().getExtras();
+            userId= bundle.getString("USERID",null);
+        }
+    }
     private void ui() {
         btnNext= findViewById(R.id.btnNext);
         llaySignUp= findViewById(R.id.llaySignUp);
