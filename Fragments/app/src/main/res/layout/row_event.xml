@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2A2A2A">
+        <ImageView
+            android:id="@+id/imageViewEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/starwars_identities"
+            android:adjustViewBounds="true"
+            android:layout_alignParentTop="true"/>
+        <View
+            android:id="@+id/viewLine"
+            android:layout_width="match_parent"
+            android:background="#D2872C"
+            android:layout_height="3dp"
+            android:layout_below="@+id/imageViewEvent"/>
+        <TextView
+            android:id="@+id/textViewEvent"
+            android:layout_below="@+id/imageViewEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="#D2872C"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Star Wars Identities"
+            android:layout_marginBottom="20dp"/>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

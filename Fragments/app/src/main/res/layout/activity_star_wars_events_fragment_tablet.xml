@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="1">
+    <fragment
+        android:id="@+id/fragmentEvents"
+        android:name="com.belatrix.kotlintemplate.ui.fragments.EventFragment"
+        tools:layout="@layout/fragment_event"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.4"/>
+
+    <fragment
+        android:id="@+id/fragmentDetails"
+        android:name="com.belatrix.kotlintemplate.ui.fragments.EventDetailsFragment"
+        tools:layout="@layout/fragment_event_details"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.6" />
+
+</LinearLayout>
