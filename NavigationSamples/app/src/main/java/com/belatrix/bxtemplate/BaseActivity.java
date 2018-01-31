@@ -8,7 +8,7 @@ import android.support.v7.app.AppCompatActivity;
  * Created by emedinaa on 15/02/17.
  */
 
-public class BaseActivity extends AppCompatActivity {
+public abstract class BaseActivity extends AppCompatActivity {
 
     protected void next(Class<?> activityClass, Bundle bundle, boolean destroy){
         Intent intent= new Intent(this, activityClass);
@@ -16,5 +16,8 @@ public class BaseActivity extends AppCompatActivity {
             intent.putExtras(bundle);
         }
         startActivity(intent);
+        if (destroy) {
+            finish();
+        }
     }
 }

@@ -1,11 +1,10 @@
 package com.belatrix.bxtemplate;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class LogInActivity extends AppCompatActivity {
+public class LogInActivity extends BaseActivity {
 
     private View btnNext,llaySignUp;
 
@@ -50,7 +49,9 @@ public class LogInActivity extends AppCompatActivity {
     }
 
     private void gotoSignUp() {
-        Intent intent= new Intent(this,SignUpActivity.class);
-        startActivity(intent);
+        //Intent intent= new Intent(this,SignUpActivity.class);
+        //startActivity(intent);
+
+        next(SignUpActivity.class,null,false);
     }
 }
