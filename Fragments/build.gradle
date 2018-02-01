@@ -32,12 +32,12 @@ ext {
     targetSdkVersion = 26
     compileSdkVersion = 26
     buildToolsVersion = '26.1.0'
-    constraintLayoutVersion='1.0.2'
+    constraintLayoutVersion = '1.0.2'
 
     // App dependencies
     supportLibraryVersion = '26.1.0'
     junitVersion = '4.12'
 
     //External dependencies
-    picassoVersion= '2.5.2'
+    picassoVersion = '2.5.2'
 }

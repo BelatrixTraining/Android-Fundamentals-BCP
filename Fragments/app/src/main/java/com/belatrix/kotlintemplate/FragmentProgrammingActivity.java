@@ -20,6 +20,7 @@ public class FragmentProgrammingActivity extends AppCompatActivity implements Bl
         setContentView(R.layout.activity_fragment_programming);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         frameLayoutContainer= (FrameLayout) findViewById(R.id.frameLayoutContainer);
         fragmentManager= getSupportFragmentManager();
 
@@ -33,6 +34,21 @@ public class FragmentProgrammingActivity extends AppCompatActivity implements Bl
 
     @Override
     public void actionActivityCambiarColor() {
+
+    }
+
+    @Override
+    public void alanLlamaAPapa(Object object) {
+
+    }
+
+    @Override
+    public void alanHolaApi(Object object) {
+
+    }
+
+    @Override
+    public void cerrarSesion() {
 
     }
 

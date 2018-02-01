@@ -1,19 +1,16 @@
-package com.belatrix.kotlintemplate.ui;
+package com.belatrix.kotlintemplate;
 
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 
-import com.belatrix.kotlintemplate.R;
 import com.belatrix.kotlintemplate.ui.fragments.BlankFragmentListener;
 
-
-public class MyActivity extends AppCompatActivity
-        implements BlankFragmentListener {
+public class AlanActivity extends AppCompatActivity implements BlankFragmentListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_my);
+        setContentView(R.layout.activity_alan);
     }
 
     @Override

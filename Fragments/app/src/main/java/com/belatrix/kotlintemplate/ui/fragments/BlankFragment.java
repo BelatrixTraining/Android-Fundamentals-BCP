@@ -6,9 +6,11 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.belatrix.kotlintemplate.R;
@@ -97,19 +99,38 @@ public class BlankFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        getView().findViewById(R.id.textViewMessage).setOnClickListener(new View.OnClickListener() {
+        TextView textViewMessage=getView().findViewById(R.id.textViewMessage);
+        textViewMessage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getActivity(),"Mensaje desde Fragment",Toast.LENGTH_LONG).show();
+            }
+        });
+
+        //( (FragmentBasicActivity)(getActivity())).llamarAPapa2();
+        //FragmentBasicActivity.llamarAPapa();
+
+        /*getView().findViewById(R.id.textViewMessage).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getActivity(),"Mensaje desde Fragment",Toast.LENGTH_LONG).show();
 
                 //Enviar a la Activity
                 //((FragmentCommunicationActivity)getActivity()).otroMetodo();
-                /*if(mListener!=null){
+                if(mListener!=null){
+
                     //mListener.actionFragment("Mensaje desde Fragment a Activity");
                     mListener.actionActivityCambiarColor();
-                }*/
+                }
             }
-        });
+        });*/
+
+        //Toast.makeText(getActivity(),"Hola desde fragment ",Toast.LENGTH_LONG).show();
+        Log.v("CONSOLE", "1. BlankFragment");
+        if(mListener!=null){
+            Log.v("CONSOLE", "2. Enviar desde BlankFragment");
+            mListener.alanLlamaAPapa("Lo que sea ");
+        }
     }
 
     public void ejecutarAccionDesdeFragment(String message){
@@ -117,6 +138,8 @@ public class BlankFragment extends Fragment {
     }
 
     public void cambiarColorFondo(){
+        Log.v("CONSOLE", "(2) 1" +
+                "2 a BlankFragment");
         //getView().findViewById(R.id.frameLayout).setBackgroundColor(Color.GREEN);
         frameLayout.setBackgroundColor(Color.GREEN);
     }

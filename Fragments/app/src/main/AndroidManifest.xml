@@ -3,6 +3,7 @@
     package="com.belatrix.kotlintemplate">
 
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -39,11 +40,21 @@
             -->
         </activity>
         <activity android:name=".BxActivity">
-            <!-- <intent-filter>
+
+            <!--
+             <intent-filter>
                  <action android:name="android.intent.action.MAIN" />
 
                  <category android:name="android.intent.category.LAUNCHER" />
-             </intent-filter>-->
+             </intent-filter>
+            -->
+        </activity>
+        <activity android:name=".AlanActivity">
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
         </activity>
     </application>
 

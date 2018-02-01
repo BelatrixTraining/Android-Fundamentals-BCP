@@ -46,6 +46,21 @@ implements BlankFragmentListener {
     }
 
     @Override
+    public void alanLlamaAPapa(Object object) {
+
+    }
+
+    @Override
+    public void alanHolaApi(Object object) {
+
+    }
+
+    @Override
+    public void cerrarSesion() {
+
+    }
+
+    @Override
     public boolean onSupportNavigateUp() {
         onBackPressed();
         return true;

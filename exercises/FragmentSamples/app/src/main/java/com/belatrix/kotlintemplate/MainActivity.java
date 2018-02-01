@@ -13,11 +13,11 @@ public class MainActivity extends BaseActivity {
     }
 
     private void app() {
-        next(MessageActivity.class,null,true);
+        //next(MessageActivity.class,null,true);
         //next(ColorActivity.class,null,true);
         //next(DynamicFragmentActivity.class,null,true);
         //next(ContactsActivity.class,null,true);
         //next(TabFragmentActivity.class,null,true);
-        //next(CardsActivity.class,null,true);
+        next(CardsActivity.class,null,true);
     }
 }
