@@ -5,6 +5,7 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AlertDialog;
+import android.util.Log;
 
 import com.belatrix.kotlintemplate.R;
 
@@ -22,8 +23,13 @@ public class SelectionDialog extends DialogFragment {
                     public void onClick(DialogInterface dialog, int which) {
                         // The 'which' argument contains the index position
                         // of the selected item
+                        log("item "+which);
                     }
                 });
         return builder.create();
+    }
+
+    private void log(String message){
+        Log.d("CONSOLE",message);
     }
 }

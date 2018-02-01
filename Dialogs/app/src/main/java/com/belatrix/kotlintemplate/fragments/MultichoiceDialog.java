@@ -5,6 +5,7 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AlertDialog;
+import android.util.Log;
 
 import com.belatrix.kotlintemplate.R;
 
@@ -39,6 +40,7 @@ public class MultichoiceDialog extends DialogFragment {
                                     // Else, if the item is already in the array, remove it
                                     mSelectedItems.remove(Integer.valueOf(which));
                                 }
+
                             }
                         })
                 // Set the action buttons
@@ -47,7 +49,7 @@ public class MultichoiceDialog extends DialogFragment {
                     public void onClick(DialogInterface dialog, int id) {
                         // User clicked OK, so save the mSelectedItems results somewhere
                         // or return them to the component that opened the dialog
-
+                        renderSelectedItems();
                     }
                 })
                 .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
@@ -58,5 +60,13 @@ public class MultichoiceDialog extends DialogFragment {
                 });
 
         return builder.create();
+    }
+
+    private void renderSelectedItems() {
+        log("items "+mSelectedItems.toString());
+    }
+
+    private void log(String message){
+        Log.d("CONSOLE",message);
     }
 }

@@ -4,6 +4,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:background="@drawable/background_dialog"
+    tools:background="@android:color/darker_gray"
     tools:context=".fragments.CustomDialogFragment">
 
     <TextView

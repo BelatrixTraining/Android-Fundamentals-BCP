@@ -32,12 +32,12 @@ public class MainActivity extends AppCompatActivity  implements CustomDialogList
         btnDialog.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showSimpleDialog();
+                //showSimpleDialog();
 
                 //showSelectionDialog();
                 //showMultichoiceDialog();
                 //showCustomDialog();
-                //showTransparentDialog();
+                showTransparentDialog();
             }
         });
     }
