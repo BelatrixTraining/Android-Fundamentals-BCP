@@ -32,21 +32,6 @@ github: https://github.com/emedinaa
 
 # Referencias 
 
-Entorno de desarrollo https://developer.android.com/studio/index.html?hl=es-419
+BottomNavigationView https://developer.android.com/reference/android/support/design/widget/BottomNavigationView.html
 
-Android Developers - Desarrollo https://developer.android.com/develop/index.html
-
-Android Developers - Diseño https://developer.android.com/design/index.html
-
-Android Developers - Distribución https://developer.android.com/distribute/index.html
-
-Android Samples - https://developer.android.com/samples/index.html
-
-Google Samples - https://github.com/googlesamples?utf8=%E2%9C%93&q=&type=&language=java https://github.com/googlesamples?utf8=%E2%9C%93&q=&type=&language=kotlin
-
-Google Java Styles - https://google.github.io/styleguide/javaguide.html
-
-Android Inspired UI - http://android.inspired-ui.com/
-
-Google Codelabs - https://codelabs.developers.google.com/
-
+Material Design - Bottom Navigation https://material.io/guidelines/components/bottom-navigation.html
