@@ -8,7 +8,7 @@ import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 
-import com.belatrix.kotlintemplate.transforms.ZoomOutPageTransformer;
+import com.belatrix.kotlintemplate.transforms.DepthPageTransformer;
 import com.belatrix.kotlintemplate.ui.fragments.ScreenSlideFragment;
 
 
@@ -40,8 +40,8 @@ public class VPagerScreenSlidesActivity extends AppCompatActivity {
         // Instantiate a ViewPager and a PagerAdapter.
         mPager = (ViewPager) findViewById(R.id.pager);
         //Transforms
-        mPager.setPageTransformer(true, new ZoomOutPageTransformer());
-        //mPager.setPageTransformer(true, new DepthPageTransformer());
+        //mPager.setPageTransformer(true, new ZoomOutPageTransformer());
+        mPager.setPageTransformer(true, new DepthPageTransformer());
         mPagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager());
         mPager.setAdapter(mPagerAdapter);
 
