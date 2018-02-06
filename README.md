@@ -9,44 +9,21 @@ e-mail: emedinaa@gmail.com
 
 github: https://github.com/emedinaa
 
-# Temario 
+# Lesson9 
 
-1. Java para Android Developers.
-
-2. Entorno de desarrollo , componentes de una aplicación android y gradle.
-
-3. Interfaz de Usuario, layouts , widgets y componentes de material design.
-
-4. Eventos de usuario.
-
-5. Listas, Grillas y adapters ( RecyclerView)
-
-6. Comunicación entre pantallas, intents, dialogs y notificaciones.
-
-7. Fragments, conceptos y comunicación.
-
-8. Componentes de navegación, tabs , navigation drawer, Viewpager.
-
-9. Servicios, Procesos en segundo plano.
+ Servicios, Procesos en segundo plano.
 
 
 # Referencias 
 
-Entorno de desarrollo https://developer.android.com/studio/index.html?hl=es-419
+Creating a Background Service https://developer.android.com/training/run-background-service/create-service.html
 
-Android Developers - Desarrollo https://developer.android.com/develop/index.html
+Services https://developer.android.com/guide/components/services.html
 
-Android Developers - Diseño https://developer.android.com/design/index.html
+AsyncTask https://developer.android.com/reference/android/os/AsyncTask.html
 
-Android Developers - Distribución https://developer.android.com/distribute/index.html
+Processes and Threads https://developer.android.com/guide/components/processes-and-threads.html
 
-Android Samples - https://developer.android.com/samples/index.html
+Threads https://developer.android.com/training/multiple-threads/define-runnable.html
 
-Google Samples - https://github.com/googlesamples?utf8=%E2%9C%93&q=&type=&language=java https://github.com/googlesamples?utf8=%E2%9C%93&q=&type=&language=kotlin
-
-Google Java Styles - https://google.github.io/styleguide/javaguide.html
-
-Android Inspired UI - http://android.inspired-ui.com/
-
-Google Codelabs - https://codelabs.developers.google.com/
 
