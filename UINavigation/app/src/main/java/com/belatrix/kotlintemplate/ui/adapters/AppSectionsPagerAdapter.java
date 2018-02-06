@@ -14,6 +14,7 @@ import com.belatrix.kotlintemplate.ui.fragments.CTabFragment;
  * Created by eduardo on 03/09/16.
  */
 public  class AppSectionsPagerAdapter extends FragmentPagerAdapter {
+//public  class AppSectionsPagerAdapter extends FragmentStatePagerAdapter {
 
     public AppSectionsPagerAdapter(FragmentManager fm) {
         super(fm);
