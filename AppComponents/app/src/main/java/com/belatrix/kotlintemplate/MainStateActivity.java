@@ -87,8 +87,8 @@ public class MainStateActivity extends AppCompatActivity {
         super.onSaveInstanceState(outState);
         Log.v(TAG, "onSaveInstanceState()");
 
-        /*outState.putString(KEY_BUTTON_VALUE,btnLogIn.getText().toString());
-        outState.putString(KEY_TXT_VALUE,tviMessage.getText().toString());*/
+        outState.putString(KEY_BUTTON_VALUE,btnLogIn.getText().toString());
+        outState.putString(KEY_TXT_VALUE,tviMessage.getText().toString());
     }
 
     @Override
@@ -96,13 +96,14 @@ public class MainStateActivity extends AppCompatActivity {
         super.onRestoreInstanceState(savedInstanceState);
 
         Log.v(TAG, "onRestoreInstanceState()");
-        /*if(savedInstanceState!=null){
+        if(savedInstanceState!=null){
             String btnValue= savedInstanceState.getString(KEY_BUTTON_VALUE);
             String txtValue= savedInstanceState.getString(KEY_TXT_VALUE);
 
+            //ui
             tviMessage.setText(txtValue);
             btnLogIn.setText(btnValue);
-        }*/
+        }
 
     }
 }

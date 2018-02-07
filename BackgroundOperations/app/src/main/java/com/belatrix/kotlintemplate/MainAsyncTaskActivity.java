@@ -25,6 +25,7 @@ public class MainAsyncTaskActivity extends AppCompatActivity implements AsyncLis
     private void startTask(){
         simpleAsyncTask= new SimpleAsyncTask(this);
         simpleAsyncTask.execute();
+
     }
 
     @Override

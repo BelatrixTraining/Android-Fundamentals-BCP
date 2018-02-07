@@ -41,7 +41,6 @@ dependencies {
     implementation "com.android.support.constraint:constraint-layout:$constraintLayoutVersion"
 
     //testImplementation 'junit:junit:4.12'
-    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     testImplementation "junit:junit:$rootProject.ext.junitVersion"
 
     androidTestImplementation 'com.android.support.test:runner:1.0.1'

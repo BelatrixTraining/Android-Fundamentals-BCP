@@ -22,8 +22,8 @@ public class MainThreadsActivity extends AppCompatActivity {
         ui();
 
         title.setText("Threads ...");
-        //startWorking();
-        startWorking2();
+        startWorking();
+        //startWorking2();
     }
 
     private void ui() {
@@ -61,6 +61,7 @@ public class MainThreadsActivity extends AppCompatActivity {
 
     public void startWorking(){
         Executor executor = Executors.newFixedThreadPool(5);
+        //executor.execute(new MyRunnable());
         for ( int i=0; i < 20; i++ ) {
             executor.execute(new MyRunnable());
         }
@@ -70,6 +71,7 @@ public class MainThreadsActivity extends AppCompatActivity {
         public void run() {
             Log.d(TAG, "Running From Thread " + Thread.currentThread().getId());
             logOnConsole("Running From Thread " + Thread.currentThread().getId());
+            //logConsole2("Threads..");
             // Your Long Running Computation Task
             try {
                 // Sleeps for 200 ms

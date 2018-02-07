@@ -46,6 +46,7 @@ public class MainBroadcastRActivity extends AppCompatActivity {
         IntentFilter intentFilter = new IntentFilter(INTENT_NAME);
         intentFilter.addAction(WifiManager.SUPPLICANT_CONNECTION_CHANGE_ACTION);
         registerReceiver(mIntentReceiver,intentFilter);
+        //unregisterReceiver();
     }
 
     public void wifiOn() {

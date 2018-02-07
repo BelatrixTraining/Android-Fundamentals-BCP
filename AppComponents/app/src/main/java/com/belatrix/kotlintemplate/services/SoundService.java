@@ -1,6 +1,5 @@
 package com.belatrix.kotlintemplate.services;
 
-import android.app.IntentService;
 import android.app.Service;
 import android.content.Intent;
 import android.media.MediaPlayer;
@@ -15,6 +14,7 @@ import com.belatrix.kotlintemplate.R;
  */
 
 public class SoundService extends Service {
+//public class SoundService extends IntentService {
 
     private MediaPlayer mediaPlayer;
 
