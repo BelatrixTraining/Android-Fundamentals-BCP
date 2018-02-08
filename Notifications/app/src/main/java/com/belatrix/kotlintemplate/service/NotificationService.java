@@ -14,10 +14,6 @@ import android.support.v7.app.NotificationCompat;
 import com.belatrix.kotlintemplate.HomeActivity;
 import com.belatrix.kotlintemplate.R;
 
-/**
- * @author Carlos Piñan
- * @date 2/3/17
- */
 public class NotificationService extends IntentService {
 
     private static final int NOTIFICATION_ID = 707;

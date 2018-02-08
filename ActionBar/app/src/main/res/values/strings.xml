@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ActionBar</string>
+    <!-- Done bar strings -->
+    <string name="done">Done</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="donebaractivity_title">Done Bar</string>
+    <string name="donebaractivity_description">In this presentation, a done bar replaces the action bar entirely, providing
+            two direct actions to persist or dismiss changes. This is suitable for cases where no
+            additional view details or actions are needed in the action bar.</string>
+    <string name="donebuttonactivity_title">Done Button</string>
+    <string name="donebuttonactivity_description">In this presentation, a done button replaces the action bar\'s "Up" affordance
+            and app icon, while the cancel action is made available in the action overflow. This is
+            well-suited to scenarios where additional view details or
+            actions may be needed in the action bar.</string>
+</resources>
